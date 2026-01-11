@@ -10,7 +10,7 @@ echo ▀█▀ █▀█ █▀█ █░█ █▄▄ █░░ █
 echo ░█░ █▀▄ █▄█ █▄█ █▄█ █▄▄ ██▄ ▄█ █▀█ █▄█ █▄█ ░█░ █ █░▀█ █▄█   ░█░ █ █▀▀ ▄█
 echo.
 echo  If you're having trouble,
-echo  — Verify that when yt-dlp.exe was installed through Winget if it put it in your User Path's in Environment Varibles
+echo  — Open Environment Varibles ^> User Path's ^> Edit ^> Verify that the folder path locations of FFmpeg.exe, yt-dlp.exe, ^& .bat's are there
 echo  — Make sure all URL's you paste in commands are wrapped in quotations like "this"
 echo  — Ensure there are no folder path mismatches in the two config files, or in the command .bat's 
 echo  — Update YT-DLP to the latest version, read the - How to Setup -.txt
@@ -68,7 +68,7 @@ echo  █─███▀█─██─██─█▄█─███─█▄�
 echo  ▀▄▄▄▄▄▀▄▄▄▄▀▄▄▄▀▄▄▄▀▄▄▄▀▄▄▄▀▄▄▀▄▄▀▄▄▄▀▀▄▄▀▄▄▄▄▀▀▄▄▄▄▄▀
 echo.
 echo  Video related commands download encoded to MP4 by default for editor's use 
-echo  If you wish to downloaded non-encoded then add -orig at the end of any command
+echo  If you wish to download non-encoded then add -orig at the end of any command
 echo.
 echo  dl-help   — Display this list of commands ^& info
 echo.

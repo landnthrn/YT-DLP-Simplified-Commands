@@ -3,4 +3,4 @@
 --format "bestvideo+bestaudio/best"
 --audio-quality 0
 --no-mtime
---ffmpeg-location "C:\Users\%USERNAME%\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-7.1.1-full_build\bin"
+--ffmpeg-location "C:\CleanPaths\FFmpeg\bin"

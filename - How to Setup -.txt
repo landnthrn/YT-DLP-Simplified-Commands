@@ -9,89 +9,60 @@ https://github.com/yt-dlp/yt-dlp
 YT-DLP SIMPLIFIED COMMANDS  
 By landn.thrn
 
-YT-DLP Commands made simple!  
-Configured to download at the Highest Quality only 
-36 different variations to download by  
+A Command Prompt UI for YT-DLP, with simplified commands and configurations.  
+
+Configured to download at the highest available quality video & audio always,  
+with 36 different variations to download by.  
  
-Video related commands download encoded to MP4 by default for editor's use and compatibility with most applications  
-If you wish to downloaded non-encoded then add `-orig` at the end of any command
+Video related commands download encoded to MP4 & MP3 by default for editor's use and compatibility with most applications    
+If you wish to download non-encoded, then add `-orig` at the end of any command
 
 You can easily change the command names if you'd like, it's as simple as renaming the command `.bat` files
+
+If you already have `yt-dlp` and `FFmpeg` installed, then just point to their `.exe` folder path locations in the two config files
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 INSTALLING YT-DLP & FFMPEG:
 
-(There's a number of ways you can do this  
-All of which will still work with these Simplified Commands, but I suggest  
-using this simple way provided, as downloading in another way would require  
-you to change the yt-dlp & ffmpeg install path locations in the `configs` `.txt` files)
+There's a number of ways you can do this. 
+All of which work with these Simplified Commands of course, 
+long as you point the path locations in the config files to the .exe's.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-SIMPLE WINGET INSTALL METHOD:
+Recommended Install of YT-DLP & FFmpeg:
 
-—  Open Windows PowerShell  
+—  Visit the YT-DLP GitHub Releases page:
+   https://github.com/yt-dlp/yt-dlp/releases
 
-—  Run the command:  
-   Winget search yt-dlp  
+—  Install the latest `yt-dlp.exe`
 
-—  Copy the first ID you see  
+—  Visit this FFmpeg Builds page:
+   https://www.gyan.dev/ffmpeg/builds/
 
-—  Type:  
-   Winget install <paste the ID>  
+—  Install the latest `ffmpeg-release-essentials.zip`
 
-—  Hit Enter  
+—  Leave them in your download's for now
 
-—  Let it finish installing  
+—  Create a folder in C:\ 
+   name it whatever you want, `CleanPaths` are what the configs currently look for
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+—  Inside the folder you made, create a folder named `YT-DLP`
 
-NOW SAME PROCESS FOR FFMPEG:
+—  Place the `yt-dlp.exe` into the `YT-DLP` folder you made
 
-—  Run:  
-   Winget search ffmpeg
+—  Place the `YT-DLP Simplified Commands` folder into the `CleanPaths` folder or whatever you named it
+   Make sure it's named just `YT-DLP Simplified Commands`
 
-—  Copy the first ID  
+—  Place the FFmpeg .zip into the `CleanPaths` folder or whatever you named it
 
-—  Type:  
-   Winget install <paste the ID>
+—  Extract the .zip, rename the folder it creates to just `FFmpeg` 
+   (System PATHs have a max character cap out so it's best to keep them short if you can)
 
-—  Hit Enter  
+—  Delete the .zip if you want, no longer needed
 
-—  Let it finish installing  
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-ONCE YT-DLP & FFMPEG ARE INSTALLED:
-
-—  Open a File Explorer tab
-
-—  Go to this path location   
-   C:\Users\%USERNAME%\AppData\Local\Microsoft\WinGet\Packages\  
-
-—  Click into the folders until you find the ffmpeg bin folder, open the bin folder and copy the path address of the folder
-
-—  In the `yt-dlp-commands` folder from this pack, open the `configs` folder  
-
-—  Open `yt-dlp-encode.txt` and find this line at bottom:  
-   --ffmpeg-location "C:\Users\%USERNAME%\AppData\Local\Microsoft\WinGet\Packages\Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe\ffmpeg-7.1.1-full_build\bin" 
-
-—  With the ffmpeg path location address you copied, paste it inbetween the quotation marks of that line
-   It's very character sensitive so make sure you've pasted it correctly and no other changes were made to the `.txt`  
-
-—  Do the same thing for the `yt-dlp-no-encode.txt`
-
-—  Save & Close the `.txt` documents  
-
-—  Open File Explorer
-
-—  Create a folder titled `yt-dlp-commands` wherever you perfer (If you change it's location later you will have to update path's, keep in mind)
-   (Recommend making a folder in Documents, title it `Scripts` and create it in there like this `Documents\Scripts\yt-dlp-commands`)
-
-—  Place the all of the files & the `configs` folder from this download into the `yt-dlp-commands` folder you made
-
-—  Copy the path address of the `yt-dlp-commands` folder where you have it 
+—  Open the two config `.txt` files inside `YT-DLP Simplified Commands`, verify that the FFmpeg folder path address of the `ffmpeg.exe` is correct 
 
 —  Windows search for Environment Varibles
 
@@ -99,11 +70,14 @@ ONCE YT-DLP & FFMPEG ARE INSTALLED:
 
 —  In the User Varibles top box select Path > Edit > New  
 
-—  Paste the path address you copied of the `yt-dlp-commands` folder location
+—  Paste the path addresses of the where the .exe's & .bats are held, if you followed the default they will look this
+   C:\CleanPaths\YT-DLP
+   C:\CleanPaths\FFmpeg\bin
+   C:\CleanPaths\YT-DLP Simplified Commands
 
-—  Click OK > OK > OK to close Environment Variables  
+—  Click OK > OK > OK to save & close Environment Variables  
 
-—  Open command prompt  
+—  Open Command Prompt  
 
 —  Type `dl-help`  
 
@@ -113,8 +87,7 @@ ENJOY :)
 
 TROUBLESHOOTING:
 If you're having trouble,
-—  Verify that when `yt-dlp.exe` was installed through Winget if it put it in your User Path's in Environment Varibles
-   The path would look something like this `C:\Users\%USERNAME%\AppData\Local\Microsoft\WinGet\Packages\yt-dlp.yt-dlp_Microsoft.Winget.Source_GUILDIDHERE`
+—  Open Environment Varibles ^> User Path's ^> Edit ^> Verify that the folder path locations of FFmpeg.exe, yt-dlp.exe, & .bat's are there
 —  Make sure all URL's you paste in commands are wrapped in quotations like "this"
 —  Ensure there are no folder path mismatches in the two config files, or in the command `.bat`'s 
 —  Update YT-DLP to the latest version, read instructions below
@@ -124,54 +97,20 @@ If you're having trouble,
 
 HOW TO UPDATE YT-DLP:
 
-It's simple as running a command in Command Prompt,
+Run this in Command Prompt:
 "C:\THE-FULL-FILE-PATH-LOCATION-OF-YOUR\yt-dlp.exe" -U
 
-If you don't know where your `yt-dlp.exe` is located, you can use Everything Searcher (a lifesaver tool highly recommend)
+If you followed the install instructions it should be installed here
+C:\CleanPaths\YT-DLP\yt-dlp.exe
 
-If you installed by Winget as instructed you can find it here:
-
-—  Go to this path address in file explorer  
-   C:\Users\%USERNAME%\AppData\Local\Microsoft\WinGet\Packages\  
-
-—  Find the `yt-dlp` folder
-
-—  Copy the path address of that location and add ` \yt-dlp.exe ` at the end  
-
-—  Wrap that full path with quotations like  
-   "C:\Thepath\yt-dlp.exe"  
-
-—  Open command prompt  
-
-—  Paste the path, then type -U at the end and enter  
-
-So in the end the update command should look like this:  
-"C:\Users\%USERNAME%\AppData\Local\Microsoft\WinGet\Packages\yt-dlp.yt-dlp_Microsoft.Winget.Source_8wekyb3d8bbwe\yt-dlp.exe" -U 
+Make sure to include \yt-dlp.exe at the end of the path, and that the path is wrapped like "this"
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-HOW TO UPDATE FFMPEG: (If installed by Winget as intructed)
+HOW TO UPDATE FFMPEG:
 
-—  Open Windows PowerShell  
-
-—  Run this command:  
-   Winget search ffmpeg  
-
-—  Copy the first ID you see  
-
-—  Run this:  
-   Winget upgrade <paste the ID>   
-
-—  Hit Enter  
-
-—  Let it finish updating  
-
-After updating, you may need to update the FFMPEG path in your config files if the version number in the path changed
-
-You can check by looking at the FFMPEG path address saved in the config files and compare it to the current one that is located here
-C:\Users\%USERNAME%\AppData\Local\Microsoft\WinGet\Packages\
-
-If the version numbers at the end of the path differ, correct it in the config files
+Just visit this build's page install the latest `ffmpeg-release-essentials.zip`
+https://www.gyan.dev/ffmpeg/builds/
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
