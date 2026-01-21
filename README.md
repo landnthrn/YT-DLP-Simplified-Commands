@@ -10,7 +10,7 @@ Configured to download at the highest available quality video & audio always,
 with 36 different variations to download by.  
  
 Video related commands download encoded to MP4 & MP3 by default for editor's use and compatibility with most applications    
-If you wish to download non-encoded, then add `-orig` at the end of any command
+If you wish to download original & non-encoded, just add `-orig` at the end of any command
 
 You can easily change the command names if you'd like, it's as simple as renaming the command `.bat` files
 
