@@ -1,7 +1,8 @@
 @echo off
 color 0a
 chcp 65001 >nul
-mode con: cols=135 lines=300
+mode con: cols=135 lines=150 >nul
+powershell -NoProfile -Command "$h = [Console]::WindowHeight; [Console]::SetBufferSize(135, 150); [Console]::SetWindowSize(135, 65); [Console]::Clear()" 2>nul
 
 echo.
 echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -51,14 +52,13 @@ echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 echo.
 echo  Found this useful?
 echo.
-echo  Find more of my creations on Github:
+echo  Find more of my creations on:
+echo.
+echo  ^[Github^]
 echo  https://github.com/landnthrn?tab=repositories
 echo.
-echo  Support me on Buy Me a Coffee:
-echo  https://buymeacoffee.com/landn.thrn
-echo.
-echo  PayPal Donation:
-echo  https://www.paypal.com/donate/?hosted_button_id=K4PLHFVBH7X8C
+echo  ^[Buy Me a Coffee^]
+echo  https://buymeacoffee.com/landn.thrn/extras
 echo.
 echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 echo.
@@ -67,8 +67,8 @@ echo  █─▄▄▄─█─▄▄─█▄─▀█▀─▄█▄─▀█�
 echo  █─███▀█─██─██─█▄█─███─█▄█─███─▀─███─█▄▀─███─██─█▄▄▄▄─█
 echo  ▀▄▄▄▄▄▀▄▄▄▄▀▄▄▄▀▄▄▄▀▄▄▄▀▄▄▄▀▄▄▀▄▄▀▄▄▄▀▀▄▄▀▄▄▄▄▀▀▄▄▄▄▄▀
 echo.
-echo  Video related commands download encoded to MP4 by default for editor's use 
-echo  If you wish to download non-encoded then add -orig at the end of any command
+echo  Commands download encoded to MP4 or MP3 by default for compatibility
+echo  If you wish to download origianl ^& non-encoded just add -orig at the end of any command
 echo.
 echo  dl-help   — Display this list of commands ^& info
 echo.
