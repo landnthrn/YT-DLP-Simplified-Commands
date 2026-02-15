@@ -11,11 +11,11 @@ echo ▀█▀ █▀█ █▀█ █░█ █▄▄ █░░ █
 echo ░█░ █▀▄ █▄█ █▄█ █▄█ █▄▄ ██▄ ▄█ █▀█ █▄█ █▄█ ░█░ █ █░▀█ █▄█   ░█░ █ █▀▀ ▄█
 echo.
 echo  If you're having trouble,
-echo  — Open Environment Varibles ^> User Path's ^> Edit ^> Verify that the folder path locations of FFmpeg.exe, yt-dlp.exe, ^& .bat's are there
-echo  — Make sure all URL's you paste in commands are wrapped in quotations like "this"
-echo  — Ensure there are no folder path mismatches in the two config files, or in the command .bat's 
-echo  — Update YT-DLP to the latest version, read the - How to Setup -.txt
-echo  — Update FFMPEG to the latest version, read the - How to Setup -.txt
+echo  - Open Environment Varibles ^> User Path's ^> Edit ^> Verify that the folder path locations of FFmpeg.exe, yt-dlp.exe, ^& .bat's are there
+echo  - Make sure all URL's you paste in commands are wrapped in quotations like "this"
+echo  - Ensure there are no folder path mismatches in the two config files, or in the command .bat's 
+echo  - Update YT-DLP to the latest version, read the - How to Setup -.txt
+echo  - Update FFMPEG to the latest version, read the - How to Setup -.txt
 echo.
 echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 echo.
@@ -72,67 +72,67 @@ echo  If you wish to download origianl ^& non-encoded just add -orig at the end 
 echo.
 echo  dl-help   — Display this list of commands ^& info
 echo.
-echo  dl        — Download
-echo  vid       — Video
-echo  aud       — Audio
-echo  clip      — Specific Section
-echo  sub       — Subtitles
-echo  playlist  — Playlist
-echo  orig      — Download original ^& non-encoded
+echo  dl        - Download
+echo  vid       - Video
+echo  aud       - Audio
+echo  clip      - Specific Section
+echo  sub       - Subtitles
+echo  playlist  - Playlist
+echo  orig      - Download original ^& non-encoded
 echo.
 echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 echo.
 echo  SUBTITLE COMMANDS :
 echo.
-echo  dl-vid-aud-sub "URL"                 —     Video + Audio + Subtitles
+echo  dl-vid-aud-sub "URL"                 -     Video + Audio + Subtitles
 echo.
-echo  dl-vid-aud-clip-sub 1:23-3:21 "URL"  —     Specific Section  ^|  Video + Audio + Subtitles
+echo  dl-vid-aud-clip-sub 1:23-3:21 "URL"  -     Specific Section  ^|  Video + Audio + Subtitles
 echo.
-echo  dl-vid-aud-playlist-sub "URL"        —     Playlist in Full  ^|  Video + Audio + Subtitles
-echo.
-echo.
-echo  dl-vid-sub "URL"                     —     Video + Subtitles
-echo.
-echo  dl-vid-clip-sub 1:23-3:21 "URL"      —     Specific Section  ^|  Video + Subtitles
-echo.
-echo  dl-vid-playlist-sub "URL"            —     Playlist in Full  ^|  Video + Subtitles
+echo  dl-vid-aud-playlist-sub "URL"        -     Playlist in Full  ^|  Video + Audio + Subtitles
 echo.
 echo.
-echo  dl-aud-sub "URL"                     —     Audio + Subtitles
+echo  dl-vid-sub "URL"                     -     Video + Subtitles
 echo.
-echo  dl-aud-clip-sub 1:23-3:21 "URL"      —     Specific Section  ^|  Audio + Subtitles
+echo  dl-vid-clip-sub 1:23-3:21 "URL"      -     Specific Section  ^|  Video + Subtitles
 echo.
-echo  dl-aud-playlist-sub "URL"            —     Playlist in Full  ^|  Audio + Subtitles
+echo  dl-vid-playlist-sub "URL"            -     Playlist in Full  ^|  Video + Subtitles
+echo.
+echo.
+echo  dl-aud-sub "URL"                     -     Audio + Subtitles
+echo.
+echo  dl-aud-clip-sub 1:23-3:21 "URL"      -     Specific Section  ^|  Audio + Subtitles
+echo.
+echo  dl-aud-playlist-sub "URL"            -     Playlist in Full  ^|  Audio + Subtitles
 echo.
 echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 echo.
 echo  PLAYLIST COMMANDS :
 echo.
-echo  dl-vid-aud-playlist "URL"            —     Playlist in Full  ^|  Video + Audio 
+echo  dl-vid-aud-playlist "URL"            -     Playlist in Full  ^|  Video + Audio 
 echo.
-echo  dl-vid-playlist "URL"                —     Playlist in Full  ^|  Video Only
+echo  dl-vid-playlist "URL"                -     Playlist in Full  ^|  Video Only
 echo.
-echo  dl-aud-playlist "URL"                —     Playlist in Full  ^|  Audio Only
+echo  dl-aud-playlist "URL"                -     Playlist in Full  ^|  Audio Only
 echo.
 echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 echo.
 echo  CLIP COMMANDS :
 echo.
-echo  dl-vid-aud-clip 1:23-3:21 "URL"      —     Specific Section  ^|  Video + Audio 
+echo  dl-vid-aud-clip 1:23-3:21 "URL"      -     Specific Section  ^|  Video + Audio 
 echo.
-echo  dl-vid-clip 1:23-3:21 "URL"          —     Specific Section  ^|  Video Only 
+echo  dl-vid-clip 1:23-3:21 "URL"          -     Specific Section  ^|  Video Only 
 echo.
-echo  dl-aud-clip 1:23-3:21 "URL"          —     Specific Section  ^|  Audio Only 
+echo  dl-aud-clip 1:23-3:21 "URL"          -     Specific Section  ^|  Audio Only 
 echo.
 echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 echo.
 echo  STANDARD COMMANDS :
 echo.
-echo  dl-vid-aud "URL"                     —     Video + Audio
+echo  dl-vid-aud "URL"                     -     Video + Audio
 echo.
-echo  dl-vid "URL"                         —     Video Only
+echo  dl-vid "URL"                         -     Video Only
 echo.
-echo  dl-aud "URL"                         —     Audio Only
+echo  dl-aud "URL"                         -     Audio Only
 echo.
 echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 echo.
