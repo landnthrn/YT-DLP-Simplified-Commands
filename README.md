@@ -1,5 +1,7 @@
 <img width="766" height="1236" alt="YT-DLP CMD UI PREVIEW" src="https://github.com/user-attachments/assets/b528289e-4a39-4652-ab96-5a7bbe1da193" />
 
+## \**THIS REPO WILL RECEIVE A BIG UPDATE IN THE COMING WEEKS*\*
+
 ## [YT-DLP GitHub](https://github.com/yt-dlp/yt-dlp)
 
 # YT-DLP SIMPLIFIED COMMANDS:  
